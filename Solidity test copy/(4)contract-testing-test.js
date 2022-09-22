@@ -24,9 +24,11 @@ beforeEach (async () => {
     .send({ from: accounts[0], gas: '1000000'});
 });
 
-//inside describe function block,
+//inside describe function block, test using describe statement
 //different 'it' statements used to test different aspect of the contract
 describe ('inbox', () => {
+    //this 'it' verify that contract is successfully deployed
+    //using assert.ok function to assert the inbox options address property was defined
     it('deploys a contract', () => {
         assert.ok(inbox.options.address);
     });
