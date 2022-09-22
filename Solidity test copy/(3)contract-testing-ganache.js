@@ -11,8 +11,13 @@ const ganache = require('ganache-cli');
 const { describe } = require('mocha');
 //use web3 library, Web3 as a constractor function
 const Web3 = require('web3');
+//set up instance web3
+//provider is a replaceable block that we stick in Web3 library
+//.provider is that allow us to connect to network
+//soon as we deploy to testnet we will replace the provider
 const web3 = new Web3(ganache.provider());
-//interface & bytecode imported from compile file
+//interface/ABI & bytecode imported from compile file
+//use { } bcs we're requiring in an object that has interface & bytecode properties
 const { interface, bytecode } = require('../compile');
 
 let accounts;
