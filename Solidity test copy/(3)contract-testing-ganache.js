@@ -9,7 +9,7 @@ const assert = require('assert');
 //use ganache-cli module
 const ganache = require('ganache-cli');
 const { describe } = require('mocha');
-//use web3 library
+//use web3 library, Web3 as a constractor function
 const Web3 = require('web3');
 const web3 = new Web3(ganache.provider());
 //interface & bytecode imported from compile file
