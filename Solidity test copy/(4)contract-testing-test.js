@@ -28,7 +28,8 @@ beforeEach (async () => {
 //different 'it' statements used to test different aspect of the contract
 describe ('inbox', () => {
     //this 'it' verify that contract is successfully deployed
-    //using assert.ok function to assert the inbox options address property was defined
+    //using assert.ok function to assert the options.address inbox property was defined
+    //it tests the address that is going to use to deploy contract
     it('deploys a contract', () => {
         assert.ok(inbox.options.address);
     });
