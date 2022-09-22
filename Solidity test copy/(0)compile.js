@@ -1,4 +1,6 @@
 // compile code will go here
+//this is a helper library that is a part of the node standard library
+//we dont have to install any assert modules etc
 const path = require('path');
 const fs = require('fs');
 //use solidity compiler here
